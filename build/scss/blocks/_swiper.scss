@@ -1,0 +1,29 @@
+.swiper {
+    --swiper-theme-color: var(--color-light);
+    --swiper-pagination-bullet-inactive-color: var(--color-light);
+    --swiper-pagination-bullet-inactive-opacity: 1;
+    --swiper-pagination-bullet-size: 24px;
+    
+    &-pagination {
+        position: static!important;
+        display: flex!important;
+        justify-content: center;
+        width: fit-content!important;
+    }
+
+    &-pagination-bullet {
+        margin: 0!important;
+
+        display: flex!important;
+        justify-content: center;
+        align-items: center;
+
+        background: none!important;
+
+        &-active {
+            background: none!important;
+            color: var(--color-accent);
+        }
+    }
+    
+}
