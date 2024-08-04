@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Positivus</title>
+	<link rel="stylesheet" href="./css/main.css" />
+
+	<link rel="icon" type="image/x-icon" href="./img/favicons/favicon.svg">
+	<link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png">
+</head>
+
+<body>
+	@@include('blocks/header.html')
+	<main class="content">
+		@@include('blocks/hero.html')
+		@@include('blocks/services.html')
+		@@include('blocks/studies.html')
+		@@include('blocks/process.html')
+		@@include('blocks/team.html')
+		@@include('blocks/reviews.html')
+		@@include('blocks/contact.html')
+	</main>
+	@@include('blocks/footer.html')
+	<div class="mobile-overlay visible-mobile" id="mobileOverlay" role="dialog" aria-hidden="true">
+		<div class="mobile-overlay__close-button-wrapper">
+			<button class="mobile-overlay__close-button cross-button" type="button" id="closeMobileMenuBtn">
+				<span class="visually-hidden">Close navigation menu</span>
+			</button>
+		</div>
+		<div class="mobile-overlay__body">
+			<ul class="mobile-overlay__list">
+				<li class="mobile-overlay__item">
+					<a class="mobile-overlay__link" href="#!">About us</a>
+				</li>
+				<li class="mobile-overlay__item">
+					<a class="mobile-overlay__link" href="#!">Services</a>
+				</li>
+				<li class="mobile-overlay__item">
+					<a class="mobile-overlay__link" href="#!">Use Cases</a>
+				</li>
+				<li class="mobile-overlay__item">
+					<a class="mobile-overlay__link" href="#!">Pricing</a>
+				</li>
+				<li class="mobile-overlay__item">
+					<a class="mobile-overlay__link" href="#!">Blog</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<script src="./js/index.bundle.js"></script>
+</body>
+</html>

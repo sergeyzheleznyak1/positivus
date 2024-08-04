@@ -1,0 +1,46 @@
+<section class="section container">
+    <header class="section__header">
+        <h2 class="section__title text-bg">Contact Us</h2>
+        <div class="section__desc">
+            <p>
+                Connect with Us: Let's Discuss Your Digital Marketing Needs
+            </p>
+        </div>
+    </header>
+    <div class="section__body">
+        <div class="contact">
+            <form class="contact__form">
+                <fieldset class="contact__request-types radios">
+                    <legend class="radios__title visually-hidden">Request Type</legend>
+                    <label class="radios__item radio">
+                        <input type="radio" name="request-type" class="radio__input visually-hidden" value="Say Hi" checked/>
+                        
+                        <span class="radio__emulator"></span>
+                        <span class="radio__label">Say Hi</span>
+                    </label>
+                    <label class="radios__item radio">
+                        <input type="radio" name="request-type" class="radio__input visually-hidden" value="Get a Quote" />
+                        
+                        <span class="radio__emulator"></span>
+                        <span class="radio__label">Get a Quote</span>
+                    </label>
+                </fieldset>
+                <div class="contact__body">
+                    <div class="contact__field field">
+                        <label for="name" class="field__label">Name</label>
+                        <input class="field__input" id="name" name="name" placeholder="Name" inputmode="text" />
+                    </div>
+                    <div class="contact__field field">
+                        <label for="email" class="field__label">Email*</label>
+                        <input type="email" class="field__input" id="email" name="email" placeholder="Email" inputmode="email" required />
+                    </div>
+                    <div class="contact__field field">
+                        <label for="message" class="field__label">Message*</label>
+                        <textarea class="field__input field__input--textarea" id="message" name="message" placeholder="Message" inputmode="text" required></textarea>
+                    </div>
+                </div>
+                <button class="contact__button button" type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,60 @@
+.field {
+    --field-input-height: var(--input-height);
+    --field-input-text-color: var(--color-dark);
+    --field-input-bg-color: var(--color-light);
+    --field-input-border-color: var(--color-dark);
+    --field-input-placeholder-color: var(--color-gray-alt); 
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    row-gap: 5px;
+
+    @include mobile {
+        row-gap: 10px;
+    }
+
+    &--big-height {
+        --field-input-height: var(--button-height);
+    }
+
+    &--dark-bg {
+        --field-input-bg-color: var(--color-dark-alt);
+        --field-input-text-color: var(--color-light);
+        --field-input-border-color: var(--color-light);
+        --field-input-placeholder-color: var(--color-light);
+    }
+
+    &__label {
+       @include fluid-text(16, 14);
+    }
+
+    &__input {
+        width: 100%;
+        height: var(--field-input-height);
+        padding-inline: 30px;
+        color: var(--field-input-text-color);
+        border: 1px solid var(--field-input-border-color);
+        border-radius: var(--border-radius);
+        background-color: var(--field-input-bg-color);
+
+        @include mobile {
+            padding-inline: 20px; 
+        }
+
+        &--textarea {
+            height: 190px;
+            padding-block: 18px;
+            resize: none;
+            outline: none;
+
+            @include mobile {
+                height: 132px;
+            }
+        }
+
+        &::placeholder {
+            color: var(--field-input-placeholder-color);
+        }
+    }
+}
