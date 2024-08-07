@@ -4,7 +4,9 @@
 - SCSS,
 - Gulp,
 - JS,
-- Accessibility
+- Accessibility,
+- Responsiveness (Desktop-first and Mobile-first approaches),
+- Techniques with local variables
 
 
 Install dependencies:
