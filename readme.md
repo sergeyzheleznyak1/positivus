@@ -23,5 +23,7 @@ Build for production:
 ```
 gulp docs
 ```
-
+<p align="center">
+  <img src="./img/Cover.jpg" alt="website cover">
+</p>
 [Watch demo](https://sergeyzheleznyak1.github.io/positivus/)
