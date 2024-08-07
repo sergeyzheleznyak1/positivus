@@ -6,8 +6,7 @@
 - JS,
 - Accessibility,
 - BEM,
-- Responsiveness (Desktop-first and Mobile-first approaches),
-- Techniques with local variables
+- Responsiveness (Desktop-first and Mobile-first approaches)
 
 
 Install dependencies:
